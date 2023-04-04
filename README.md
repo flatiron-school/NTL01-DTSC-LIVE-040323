@@ -33,3 +33,4 @@ git fetch upstream
 git merge upstream/main -m "meaningful message about what you're updating"
 ```
 7. Hello
+8. Hello from GitHub
