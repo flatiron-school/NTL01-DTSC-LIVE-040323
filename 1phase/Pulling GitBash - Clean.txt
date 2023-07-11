@@ -1,0 +1,6 @@
+To re-cap. In order to pull I will
+Go to location -  cd NTL01-DTSC-LIVE-040323/
+$ git fetch upstream
+$ git merge upstream/main -m "msg here"
+$ git push origin main
+$ jupyter notebooks
