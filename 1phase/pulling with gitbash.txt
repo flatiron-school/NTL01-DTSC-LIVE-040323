@@ -1,0 +1,90 @@
+bobev@RaptorLake MINGW64 ~/Documents/Flatiron
+
+
+$ cd NTL01-DTSC-LIVE-040323/
+
+
+
+(learn-env)
+bobev@RaptorLake MINGW64 ~/Documents/Flatiron/NTL01-DTSC-LIVE-040323 (main)
+$ git fetch https://github.com/flatiron-school/NTL01-DTSC-LIVE-040323/tree/main/1phase
+fatal: remote error:
+  flatiron-school/NTL01-DTSC-LIVE-040323/tree/main/1phase is not a valid repository name
+  Visit https://support.github.com/ for help
+(learn-env)
+bobev@RaptorLake MINGW64 ~/Documents/Flatiron/NTL01-DTSC-LIVE-040323 (main)
+$ git fetch upstream https://github.com/flatiron-school/NTL01-DTSC-LIVE-040323/tree/main/1phase
+fatal: invalid refspec 'https://github.com/flatiron-school/NTL01-DTSC-LIVE-040323/tree/main/1phase'
+(learn-env)
+bobev@RaptorLake MINGW64 ~/Documents/Flatiron/NTL01-DTSC-LIVE-040323 (main)
+
+
+
+
+
+$ git fetch upstream
+
+
+
+remote: Enumerating objects: 13, done.
+remote: Counting objects: 100% (13/13), done.
+remote: Compressing objects: 100% (10/10), done.
+remote: Total 13 (delta 4), reused 12 (delta 3), pack-reused 0
+Unpacking objects: 100% (13/13), 21.84 KiB | 142.00 KiB/s, done.
+From ssh://github.com/flatiron-school/NTL01-DTSC-LIVE-040323
+   1239dad..0d41886  main       -> upstream/main
+(learn-env)
+bobev@RaptorLake MINGW64 ~/Documents/Flatiron/NTL01-DTSC-LIVE-040323 (main)
+
+
+$ git merge upstream/main -m "msg here"
+
+
+
+
+warning: in the working copy of '1phase/05-python-review.ipynb', LF will be replaced by CRLF the ne
+Merge made by the 'ort' strategy.
+ 1phase/06-data-analysis-with-csvs.ipynb           |  959 +++++++++++
+ 1phase/07-data-analysis-with-json.ipynb           | 1054 ++++++++++++
+ 1phase/completed/05-python-review-completed.ipynb | 1896 +++++++++++++++++++++
+ 3 files changed, 3909 insertions(+)
+ create mode 100644 1phase/06-data-analysis-with-csvs.ipynb
+ create mode 100644 1phase/07-data-analysis-with-json.ipynb
+ create mode 100644 1phase/completed/05-python-review-completed.ipynb
+(learn-env)
+bobev@RaptorLake MINGW64 ~/Documents/Flatiron/NTL01-DTSC-LIVE-040323 (main)
+
+
+
+$ git push origin main
+
+
+
+
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 32 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 291 bytes | 291.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0
+To ssh://github.com/SeanE09/NTL01-DTSC-LIVE-040323
+   f1d3c59..81aff09  main -> main
+(learn-env)
+bobev@RaptorLake MINGW64 ~/Documents/Flatiron/NTL01-DTSC-LIVE-040323 (main)
+
+
+
+$ jupyter notebooks
+
+
+
+
+Traceback (most recent call last):
+  File "C:\Users\bobev\anaconda3\envs\learn-env\Scripts\jupyter-script.py", line 10, in <module>
+    sys.exit(main())
+  File "C:\Users\bobev\anaconda3\envs\learn-env\lib\site-packages\jupyter_core\command.py", line 24
+    command = _jupyter_abspath(subcommand)
+  File "C:\Users\bobev\anaconda3\envs\learn-env\lib\site-packages\jupyter_core\command.py", line 13
+    raise Exception(
+Exception: Jupyter command `jupyter-notebooks` not found.
+(learn-env)
